@@ -8,7 +8,7 @@
 2.) Describe a life-cycle event in React?
 
         A React lifecycle event is just a method that you call on a component class or a component function. A good example
-        would be componentDidMount, which you can use to load data into your component right a the beginning of its lifecycle.
+        would be componentDidMount, which you can use to load data into your component right at the beginning of its lifecycle.
 
 3.) Explain the details of a Higher Order Component?
 
