@@ -50,7 +50,7 @@ export default class Content extends Component {
           console.log("match found");
           return c;
         }
-        return this.state.cards;
+        return null;
       }));
       return cards;
     }
