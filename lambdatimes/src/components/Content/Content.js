@@ -45,8 +45,9 @@ export default class Content extends Component {
     } 
     else {
       let cards = [];
-      cards.push(this.state.cards.filter(c => {
+      cards.push(...this.state.cards.filter(c => {
         if (c.tab === this.state.selected) {
+          console.log("match found");
           return c;
         }
       }));

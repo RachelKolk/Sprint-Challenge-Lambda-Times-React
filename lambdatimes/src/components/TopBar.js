@@ -26,6 +26,8 @@ const TopBarCont = styled.div`
   padding: 0 10px;
 `;
 
+
+
 const TopBarContLeft = styled.div`
   display: flex;
   justify-content: none;
@@ -35,10 +37,38 @@ const TopBarContLeft = styled.div`
   font-size: 11px;
 `;
 
-const TopBarContCenter = styled.div`
+const LeftSpan = styled(TopBarContLeft)`
   cursor: pointer;
   margin-right: 25%;
   font-weight: bold;
+`;
+
+const TopBarContCenter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 3;
+  font-size: 9px;
+} */
+`;
+
+const CenterSpan = styled.span`
+  cursor: pointer;
+  margin-right: 5%;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const CenterSpanLast = styled.span`
+  cursor: pointer;
+  margin-right: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 const TopBarContRight = styled.div`
@@ -51,18 +81,26 @@ const TopBarContRight = styled.div`
   font-weight: bold;
 `;
 
+const RightSpan = styled.span`
+  &:hover {
+  cursor: pointer;
+  }
+`;
+
+
+
 const TopBar = () => {
   return (
     <StyledTopBar>
       <TopBarCont>
         <TopBarContLeft>
-          <span>TOPICS</span><span>SEARCH</span>
+          <LeftSpan>TOPICS</LeftSpan><LeftSpan>SEARCH</LeftSpan>
         </TopBarContLeft>
         <TopBarContCenter>
-          <span>GENERAL</span><span>BROWNBAG</span><span>RANDOM</span><span>MUSIC</span><span>ANNOUNCEMENTS</span>
+          <CenterSpan>GENERAL</CenterSpan><CenterSpan>BROWNBAG</CenterSpan><CenterSpan>RANDOM</CenterSpan><CenterSpan>MUSIC</CenterSpan><CenterSpanLast>ANNOUNCEMENTS</CenterSpanLast>
         </TopBarContCenter>
         <TopBarContRight>
-          <span>LOG IN</span>
+          <RightSpan>LOG IN</RightSpan>
         </TopBarContRight>
       </TopBarCont>
     </StyledTopBar>
