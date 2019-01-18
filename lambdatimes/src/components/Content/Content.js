@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import Tabs from './Tabs';
 import Cards from './Cards';
@@ -50,6 +50,7 @@ export default class Content extends Component {
           console.log("match found");
           return c;
         }
+        return this.state.cards;
       }));
       return cards;
     }
