@@ -15,7 +15,7 @@ const Tab = props => {
       onClick={() => {
         props.selectTabHandler(props.tab)
       }}
-      // onClick={props.selectTabHandler(props.tab)}       
+           
     >
       {props.tab.toUpperCase()}
     </div>
